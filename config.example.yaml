@@ -1,0 +1,49 @@
+telegram:
+  bot_token: "YOUR_BOT_TOKEN_HERE"
+
+database:
+  path: "brain.db"
+
+chromadb:
+  persist_directory: "./chroma_db"
+  collection_name: "second_brain"
+
+ollama:
+  base_url: "http://localhost:11434"
+  model: "qwen2.5:7b"
+
+cache:
+  ttl_hours: 4
+
+scheduler:
+  task_check_interval: 15
+  news_highlight_hour_min: 9
+  news_highlight_hour_max: 18
+
+rate_limiting:
+  telegram_messages_per_minute: 20
+  api_requests_per_minute: 30
+
+retry:
+  max_retries: 3
+  initial_delay: 5.0
+  backoff_factor: 2.0
+
+news:
+  sources:
+    - name: "hacker_news"
+      url: "https://news.ycombinator.com/"
+    - name: "tech_news"
+      url: "https://techcrunch.com/"
+
+google_calendar:
+  enabled: true
+  client_config:
+    installed:
+      client_id: "YOUR_CLIENT_ID.apps.googleusercontent.com"
+      client_secret: "YOUR_CLIENT_SECRET"
+      auth_uri: "https://accounts.google.com/o/oauth2/auth"
+      token_uri: "https://oauth2.googleapis.com/token"
+      auth_provider_x509_cert_url: "https://www.googleapis.com/oauth2/v1/certs"
+      redirect_uris: ["urn:ietf:wg:oauth:2.0:oob", "http://localhost"]
+  redirect_uri: "urn:ietf:wg:oauth:2.0:oob"
