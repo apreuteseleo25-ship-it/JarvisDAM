@@ -1,4 +1,4 @@
-# 🤖 J.A.R.V.I.S. - Just A Rather Very Intelligent System
+# 🤖 J.A.R.V.I.S.DAM
 
 **Asistente Personal Inteligente con IA Local**
 
@@ -334,30 +334,13 @@ chmod -R 755 ./chroma_db
 ## 📄 Documentación Adicional
 
 - **[DOCUMENTACION_TECNICA_JARVIS.md](DOCUMENTACION_TECNICA_JARVIS.md)**: Documentación técnica completa con diagramas Mermaid
-- **DOCUMENTACION_TECNICA_JARVIS.docx**: Memoria técnica en formato Word para entrega académica
-
----
-
-## 📈 Cumplimiento de Requisitos Académicos
-
-| Requisito | Cumplimiento | Evidencia |
-|-----------|--------------|-----------|
-| Middleware Python | ✅ 100% | `main.py` + `ollama_service.py` |
-| Manejo de Errores | ✅ 100% | Retry, timeouts, fallbacks |
-| Variables de Entorno | ✅ 100% | `config.yaml` protegido |
-| Mensaje de Bienvenida | ✅ 100% | `/start` con menú interactivo |
-| Manual de Usuario | ✅ 100% | `/help` con 18 comandos |
-| 5+ Comandos | ✅ 360% | **18 comandos** implementados |
-| System Prompt | ✅ 100% | `JARVIS_CORE_PROMPT` personalizado |
-| Hardening | ✅ 100% | Sin tokens hardcodeados, logs |
-| Documentación | ✅ 100% | README + memoria técnica |
 
 ---
 
 ## 🎓 Créditos Académicos
 
-**Desarrollado por:** Leonardo  
-**Asignatura:** Desarrollo de Aplicaciones con Inteligencia Artificial  
+**Desarrollado por:** Leonard Cristian Apreutese
+**Asignatura:** Digitalización
 **Año:** 2026
 
 ---
